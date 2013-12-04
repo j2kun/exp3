@@ -21,7 +21,7 @@ def regretWeightsGraph(filename, title):
    xs = numpy.array(list(range(len(data[0]))))
 
    ax1 = plt.subplot(211)
-   plt.ylabel('Simple Regret')
+   plt.ylabel('Cumulative (weak) Regret')
    ax1.plot(xs, regret)
    ax1.plot(xs, regretBound)
    plt.title(title)
